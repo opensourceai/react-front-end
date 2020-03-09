@@ -1,0 +1,12 @@
+version: "3"
+services:
+  front-end:
+    image: ${IMAGE}:latest
+    container_name: ${CONTAINER_NAME}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+
+
