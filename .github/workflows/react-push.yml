@@ -1,10 +1,6 @@
 name: Docker
 
-on:
-  push:
-    # Publish `master` as Docker `latest` image.
-    branches:
-      - master
+on: [push]
 
 jobs:
 
@@ -25,7 +21,7 @@ jobs:
 
 
   deploy:
-#    if: contains(github.repository, 'opensourceai')
+    if: contains(github.repository, 'opensourceai')
     name: Deploy
     needs: [test]
     runs-on: ubuntu-latest
