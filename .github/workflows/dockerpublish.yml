@@ -97,7 +97,7 @@ jobs:
             echo IMAGE_ID=$IMAGE_ID
             echo VERSION=$VERSION
             docker pull $IMAGE_ID:$VERSION
-            docker run -d -p 80:80 --name  ${{ IMAGE_NAME }} $IMAGE_ID:$VERSION
+            docker run -d -p 80:80 --name  ${ IMAGE_NAME } $IMAGE_ID:$VERSION
 
 
 
