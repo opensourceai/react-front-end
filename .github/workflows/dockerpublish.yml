@@ -68,7 +68,7 @@ jobs:
 
 
   deploy:
-    if: contains(github.repository, 'opensourceai')
+#    if: contains(github.repository, 'opensourceai')
 #    needs: push
     runs-on: ubuntu-latest
 
