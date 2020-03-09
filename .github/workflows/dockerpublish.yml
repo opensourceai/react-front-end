@@ -55,7 +55,7 @@ jobs:
 
       - name: Push image
         run: |
-          IMAGE_ID=docker pull registry.cn-shanghai.aliyuncs.com/opensourceai/react-front-end
+          IMAGE_ID=registry.cn-shanghai.aliyuncs.com/opensourceai/react-front-end
 
           # Strip git ref prefix from version
           VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
