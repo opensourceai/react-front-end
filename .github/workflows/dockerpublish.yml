@@ -69,7 +69,7 @@ jobs:
 
   deploy:
     if: contains(github.repository, 'opensourceai')
-    needs: push
+#    needs: push
     name: Deploy
     steps:
       - name: Build and Deploy ${{ github.repository }}
