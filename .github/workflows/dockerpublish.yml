@@ -71,7 +71,6 @@ jobs:
 #    if: contains(github.repository, 'opensourceai')
 #    needs: push
     runs-on: ubuntu-latest
-
     name: Deploy
     steps:
       - name: Build and Deploy ${{ github.repository }}
@@ -97,7 +96,7 @@ jobs:
             echo IMAGE_ID=$IMAGE_ID
             echo VERSION=$VERSION
             docker pull $IMAGE_ID:$VERSION
-            docker run -d -p 80:80 --name  ${ IMAGE_NAME } $IMAGE_ID:$VERSION
+            docker run -d -p 80:80 --name react-front-end $IMAGE_ID:$VERSION
 
 
 
