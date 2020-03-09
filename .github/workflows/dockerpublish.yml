@@ -51,7 +51,7 @@ jobs:
         run: docker build . --file Dockerfile --tag image
 
       - name: Log into registry
-        run: echo "${{ secrets.ALIYUN_TOKEN }}" |docker login --username=${{ ALIYUN_USERNAME }} registry.cn-shanghai.aliyuncs.com --password-stdin
+        run: echo "${{ secrets.ALIYUN_TOKEN }}" |docker login --username=${{ secrets.ALIYUN_USERNAME }} registry.cn-shanghai.aliyuncs.com --password-stdin
 
       - name: Push image
         run: |
