@@ -1,5 +1,80 @@
 .login-wrapper {
-  height: 500px;
   width: 100%;
-  background: red;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+
+  :global {
+    .login-box {
+      width: 400px;
+      height: 500px;
+
+      .github {
+        position: relative;
+        left: 340px;
+        top: 10px;
+      }
+      .title {
+        height: 120px;
+        box-sizing: border-box;
+        padding-top: 60px;
+        text-align: center;
+      }
+      .form-wrapper {
+        width: 300px;
+        margin: 0 auto;
+
+        .ant-form-item{
+          margin-bottom: 10px;
+          margin-top: 20px;
+
+          .ant-input:focus{
+            box-shadow: none;
+          }
+        }
+
+        input {
+          border: none;
+        }
+        .user,
+        .code {
+          border-bottom: 2px solid gainsboro;
+        }
+        .pw {
+          border-bottom: 2px solid #0084fd;
+        }
+        .code-wrapper {
+          cursor: pointer;
+          font-size: 20px;
+          background: #d6d7cf;
+          font-weight: 700;
+          line-height: 50px;
+          text-align: center;
+          letter-spacing: 0.4em;
+          font-style: italic;
+        }
+        .submit-button{
+          margin: 20px 0;
+          height: 35px;
+          width: 300px;
+          cursor: pointer;
+
+          .login{
+            color: #fff;
+            position: relative;
+            top: 10px;
+            left: 120px;
+          }
+          .regist{
+            color: #fff;
+            position: relative;
+            top: 10px;
+            left: 132px;
+          }
+        }
+      }
+    }
+  }
 }

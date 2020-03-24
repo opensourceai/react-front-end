@@ -9,13 +9,11 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <div className="App">
-          <BrowserRouter>
-            <Fragment>
-              <Route path="/login" exact component={Login}></Route>
-            </Fragment>
-          </BrowserRouter>
-        </div>
+        <BrowserRouter>
+          <Fragment>
+            <Route path="/login" exact component={Login}></Route>
+          </Fragment>
+        </BrowserRouter>
       </Provider>
     </div>
   );
